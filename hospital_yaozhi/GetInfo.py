@@ -15,7 +15,6 @@ target = 'https://db.yaozh.com/hmap/'
 class GetUserListByBS4():
 
     def __init__(self):
-        self.user = userDao.User()
         '''
         Constructor
         '''
@@ -30,7 +29,7 @@ class GetUserListByBS4():
         return htm
 
     def start(self):
-        for i in range(80000, 81101):
+        for i in range(1, 81101):
 
             dao = Dao.Hospital()
             html = hospitalGet.get(target + str(i) + ".html", "utf-8")
