@@ -1,0 +1,25 @@
+-- 数据库名：pachong
+CREATE TABLE `HospitalsInfo` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `HospitalName` varchar(100) DEFAULT NULL COMMENT '医院名称',
+  `HosAliasName` varchar(100) DEFAULT NULL COMMENT '医院别名',
+  `HospitalLevel` varchar(100) DEFAULT NULL COMMENT '医院等级',
+  `HospitalType` varchar(100) DEFAULT NULL COMMENT '医院类型',
+  `Provice` varchar(100) DEFAULT NULL COMMENT '省',
+  `City` varchar(100) DEFAULT NULL COMMENT '市',
+  `Count` varchar(100) DEFAULT NULL COMMENT '县',
+  `HospitalAdress` varchar(100) DEFAULT NULL COMMENT '医院地址',
+  `HospitalCreateYear` varchar(100) DEFAULT NULL COMMENT '建院年份',
+  `HospitalCharer` varchar(100) DEFAULT NULL COMMENT '医院负责人',
+  `HospitalMethod` varchar(100) DEFAULT NULL COMMENT '经营方式',
+  `OutpatientVolume` varchar(100) DEFAULT NULL COMMENT '门诊量',
+  `HospitalDepartments` text COMMENT '医院科室',
+  `Email` varchar(100) DEFAULT NULL COMMENT '邮箱',
+  `ZipCode` varchar(100) DEFAULT NULL COMMENT '邮编',
+  `HospitalWebsite` varchar(100) DEFAULT NULL COMMENT '医院网址',
+  `DataSource` varchar(100) DEFAULT NULL COMMENT '数据来源',
+  `DataSourceWebsite` varchar(100) DEFAULT NULL COMMENT '数据来源网站',
+  `WarehousingTime` timestamp NULL DEFAULT CURRENT_TIMESTAMP COMMENT '入库时间',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `HospitalsInfo_id_IDX` (`id`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=77553 DEFAULT CHARSET=utf8mb4;

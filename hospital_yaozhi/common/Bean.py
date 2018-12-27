@@ -3,7 +3,6 @@ import pymysql
 import pyodbc
 import urllib
 import urllib.request
-from user import userDao
 from pyquery import PyQuery as pq
 import requests
 from multiprocessing import Pool
@@ -37,12 +36,12 @@ TITLES = ["医院名称	",
           "医院网址"]
 
 # MongoDB 数据库连接信息
-client = pymongo.MongoClient('39.106.53.34')
+client = pymongo.MongoClient('localhost')
 MONGDB = client['hospital']
 # Mysql 数据库连接信息
-MYSQLCONN = pymysql.connect(host='39.106.53.34',
+MYSQLCONN = pymysql.connect(host='localhost',
                             user='root',
-                            password="luoaijun",
+                            password="root",
                             database='pachong',
                             port=3306,
                             charset='utf8')

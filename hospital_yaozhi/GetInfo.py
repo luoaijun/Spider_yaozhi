@@ -1,6 +1,5 @@
 import urllib
 import urllib.request
-from user import userDao
 import urllib.request, urllib.parse
 from bs4 import BeautifulSoup
 from hospital_yaozhi.common import Bean, Dao
